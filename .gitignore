@@ -1,0 +1,17 @@
+# Системні файли
+.DS_Store
+Thumbs.db
+
+# Редактори
+.vscode/
+.idea/
+
+# Залежності та збірка
+node_modules/
+dist/
+build/
+
+# Секрети та локальні налаштування
+.env
+.env.*
+*.log
