@@ -151,12 +151,7 @@ h1, h2, h3, h4 { color: var(--ink-strong); line-height: 1.15; margin: 0 0 .5em; 
 .hero h1 { color: #fff; font-size: clamp(38px, 6vw, 68px); font-weight: 900; letter-spacing: -.02em; text-transform: uppercase; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero .lead { color: var(--on-dark-muted); }
-.hero-media { position: relative; margin: 0 28px 28px 0; } /* miejsce na żółty prostokąt, żeby nie wychodził poza siatkę */
-.hero-media::before {
-  /* żółty prostokąt z logo, przesunięty za zdjęcie */
-  content: ""; position: absolute; inset: 28px -28px -28px 28px; background: var(--accent); border-radius: var(--radius);
-}
-.hero-media img { position: relative; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
+.hero-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); }
 
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; }
