@@ -151,7 +151,7 @@ h1, h2, h3, h4 { color: var(--ink-strong); line-height: 1.15; margin: 0 0 .5em; 
 .hero h1 { color: #fff; font-size: clamp(38px, 6vw, 68px); font-weight: 900; letter-spacing: -.02em; text-transform: uppercase; }
 .hero h1 em { font-style: normal; color: var(--accent); }
 .hero .lead { color: var(--on-dark-muted); }
-.hero-media { position: relative; }
+.hero-media { position: relative; margin: 0 28px 28px 0; } /* miejsce na żółty prostokąt, żeby nie wychodził poza siatkę */
 .hero-media::before {
   /* żółty prostokąt z logo, przesunięty za zdjęcie */
   content: ""; position: absolute; inset: 28px -28px -28px 28px; background: var(--accent); border-radius: var(--radius);
@@ -160,7 +160,6 @@ h1, h2, h3, h4 { color: var(--ink-strong); line-height: 1.15; margin: 0 0 .5em; 
 
 @media (max-width: 860px) {
   .hero .wrap { grid-template-columns: 1fr; }
-  .hero-media { margin-right: 28px; }
   .hero-media img { aspect-ratio: 4 / 3; }
 }
 
@@ -392,7 +391,7 @@ a.pf-card .pf-thumb { cursor: pointer; }
 .pf-after { margin-top: 40px !important; }
 .page-head .lead a, .lead a { color: inherit; text-decoration-color: var(--accent); text-decoration-thickness: 3px; text-underline-offset: 3px; }
 .pf-card[data-video] .pf-thumb img { object-position: 50% 25%; }
-@media (max-width: 860px) { .hero-media img { object-position: 50% 75%; } }
+@media (max-width: 860px) { .hero-media img { object-position: 50% 92%; } }
 .pf-card, .service { scroll-margin-top: 90px; }
 [hidden] { display: none !important; }
 .lb-close { background: var(--ink-strong); }
